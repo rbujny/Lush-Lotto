@@ -1,0 +1,95 @@
+body
+{
+    background-color: lemonchiffon;
+}
+h1
+{
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 2px;
+    font-size: 56px;
+}
+h2, h3, h4
+{
+    font-family: 'Lexend', sans-serif;
+}
+h3
+{
+    font-size: 28px;
+}
+.banner
+{
+    display: flex;
+}
+.intro
+{
+    flex-direction: column;
+    align-self: flex-end;
+    width: 30%;
+}
+.nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-self: flex-end;
+    width: 70%;
+    justify-items: right;
+}
+.menuItem
+{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    /*border: 1px solid gray;*/
+    /*border-radius: 20px;*/
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+}
+.menuItem:hover
+{
+    color: #808080;
+}
+.main
+{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: #e1e1e1;
+    margin-left: 5%;
+    padding: 20px;
+}
+.imgButt
+{
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+button
+{
+    width: 90%;
+    margin-left: 10px;
+}
+.gameDesc
+{
+    display: flex;
+}
+.gameDesc>h2
+{
+    display: inline-block;
+}
+.desc
+{
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 10px;
+}
+.footer
+{
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

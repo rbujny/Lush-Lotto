@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Lush Lotto
+{% endblock %}
+
+{% block body %}
+    <h2>Check out our games</h2>
+    <div class="main">
+        <div class="gameDesc">
+            <div class="imgButt">
+            <a href="#"><img src="{{ asset('img/Lotto.png') }}" width="200px" height="200px"></a>
+            <button>Play!</button>
+            </div>
+            <div class="desc">
+            <h2>Lush Lotto</h2>
+                <h4>How to play?</h4>
+            <p>
+                To play Lush Lotto, you have to choose 6 out of 49 numbers and have got more than 3 LC.
+                <br>Next system will generate 6 random numbers and if you guess more than 3, you will get a prize.
+            </p>
+                <h4>Prizes for guessed numbers:</h4>
+                <ul>
+                    <li>3 guessed numbers - 24 LC</li>
+                    <li>4 guessed numbers - 500 LC</li>
+                    <li>5 guessed numbers - 5000 LC</li>
+                    <li>6 guessed numbers - 5 000 000 LC</li>
+                </ul>
+            </div>
+        </div>
+        <div class="gameDesc">
+            <div class="imgButt">
+                <a href="#"><img src="{{ asset('img/Lotto.png') }}" width="200px" height="200px"></a>
+                <button>Play!</button>
+            </div>
+            <div class="desc">
+                <h2>Lush Lotto</h2>
+                <h4>How to play?</h4>
+                <p>
+                    To play Lush Lotto, you have to choose 6 out of 49 numbers and have got more than 3 LC.
+                    <br>Next system will generate 6 random numbers and if you guess more than 3, you will get a prize.
+                </p>
+                <h4>Prizes for guessed numbers:</h4>
+                <ul>
+                    <li>3 guessed numbers - 24 LC</li>
+                    <li>4 guessed numbers - 500 LC</li>
+                    <li>5 guessed numbers - 5000 LC</li>
+                    <li>6 guessed numbers - 5 000 000 LC</li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+{% endblock %}
