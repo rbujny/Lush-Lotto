@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@700&family=Luckiest+Guy&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         {#        {% block stylesheets %}#}
 {#            {{ encore_entry_link_tags('app') }}#}
 {#        {% endblock %}#}
@@ -22,7 +24,7 @@
     <div class="banner">
         <div class="intro">
         <h3>Welcome to</h3>
-        <h1>Lush Lotto</h1>
+        <a href="{{ path("app_homepage") }}"><h1>Lush Lotto</h1></a>
         </div>
         <div class="nav">
             <a class="menuItem" href="{{ path('app_homepage') }}">Home</a>
@@ -32,7 +34,7 @@
 {#                <span class="menuItem">My account</span>#}
 {#                <span class="menuItem">Logout</span>#}
 {#            {% else %}#}
-                <a class="menuItem">Login</a>
+                <a class="menuItem" href="#">Login</a>
 {#            {% endif %}#}
         </div>
     </div>

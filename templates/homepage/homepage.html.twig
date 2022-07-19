@@ -3,14 +3,31 @@
 {% block title %}
     Lush Lotto
 {% endblock %}
-
 {% block body %}
-    <h2>Check out our games</h2>
+    <style>
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInFromDown {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <h2 style="margin-left: 20px">Check out our games</h2>
     <div class="main">
         <div class="gameDesc">
             <div class="imgButt">
-            <a href="#"><img src="{{ asset('img/Lotto.png') }}" width="200px" height="200px"></a>
-            <button>Play!</button>
+            <a href="{{ path("app_game", {'slug': 'lotto'}) }}"><img src="{{ asset('img/Lotto.png') }}" width="200px" height="200px"></a>
+            <button onclick='window.location.href = "{{ path("app_game", {"slug": "lotto"}) }}"'>Play!</button>
             </div>
             <div class="desc">
             <h2>Lush Lotto</h2>
@@ -30,8 +47,8 @@
         </div>
         <div class="gameDesc">
             <div class="imgButt">
-                <a href="#"><img src="{{ asset('img/Lotto.png') }}" width="200px" height="200px"></a>
-                <button>Play!</button>
+                <a href="{{ path("app_game", {'slug': 'lotto'}) }}"><img src="{{ asset('img/Lotto.png') }}" width="200px" height="200px"></a>
+                <button onclick='window.location.href = "{{ path("app_game", {"slug": "lotto"}) }}"'>Play!</button>
             </div>
             <div class="desc">
                 <h2>Lush Lotto</h2>
