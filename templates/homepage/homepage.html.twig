@@ -26,8 +26,8 @@
     <div class="main">
         <div class="gameDesc">
             <div class="imgButt">
-            <a href="{{ path("app_game", {'slug': 'lotto'}) }}"><img src="{{ asset('img/Lotto.png') }}" width="200px" height="200px"></a>
-            <button onclick='window.location.href = "{{ path("app_game", {"slug": "lotto"}) }}"'>Play!</button>
+            <a href="{{ path("app_game", {'slug': 'Lotto'}) }}"><img src="{{ asset('img/Lotto.png') }}" width="200px" height="200px"></a>
+            <button class="gameButton" onclick='window.location.href = "{{ path("app_game", {"slug": "lotto"}) }}"'>Play!</button>
             </div>
             <div class="desc">
             <h2>Lush Lotto</h2>
@@ -47,8 +47,8 @@
         </div>
         <div class="gameDesc">
             <div class="imgButt">
-                <a href="{{ path("app_game", {'slug': 'lotto'}) }}"><img src="{{ asset('img/Lotto.png') }}" width="200px" height="200px"></a>
-                <button onclick='window.location.href = "{{ path("app_game", {"slug": "lotto"}) }}"'>Play!</button>
+                <a href="{{ path("app_game", {'slug': 'Lotto'}) }}"><img src="{{ asset('img/Lotto.png') }}" width="200px" height="200px"></a>
+                <button class="gameButton" onclick='window.location.href = "{{ path("app_game", {"slug": "Lotto"}) }}"'>Play!</button>
             </div>
             <div class="desc">
                 <h2>Lush Lotto</h2>
@@ -67,4 +67,7 @@
             </div>
         </div>  
     </div>
+    <script>
+        document.getElementById("welcome").style.display = '';
+    </script>
 {% endblock %}

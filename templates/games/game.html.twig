@@ -5,5 +5,20 @@
 {% endblock %}
 
 {% block body %}
-    hehe
+    <div class="main">
+        <h2>Let's play {{ slug }}</h2>
+        <a href="#" style="color: white"><h4>Rules</h4></a>
+        <h3>Choose your numbers</h3>
+        <div class="numSelect">
+        <input type="number" min="1" max="49" name="numb">
+        <input type="number" min="1" max="49" name="numb">
+        <input type="number" min="1" max="49" name="numb">
+        <input type="number" min="1" max="49" name="numb">
+        <input type="number" min="1" max="49" name="numb">
+        <input type="number" min="1" max="49" name="numb">
+        <div class="end">
+            <span class="cost">Cost: 3 LC</span><br>
+            <button type="submit" class="endButt">Send a coupon</button>
+        </div>
+    </div>
 {% endblock %}

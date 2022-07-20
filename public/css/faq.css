@@ -1,0 +1,28 @@
+.material-icons:hover
+{
+    cursor: pointer;
+}
+.mainFAQ
+{
+    margin-left: 20px;
+}
+.faqItem
+{
+    margin-bottom: 50px;
+}
+.close
+{
+    font-size: 26px;
+    text-align: right;
+}
+.close:hover
+{
+    cursor: pointer;
+}
+.answer
+{
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;
+}

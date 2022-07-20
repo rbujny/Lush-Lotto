@@ -5,19 +5,54 @@
 {% endblock %}
 
 {% block body %}
-    <h2> About Lush Lotto</h2>
-    <div style="width: 50%">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in magna volutpat, porttitor diam pretium, bibendum neque. Vivamus volutpat turpis id rutrum elementum. Vestibulum mollis justo a metus consequat finibus. Proin nec faucibus nisi, quis feugiat tortor. Sed cursus euismod felis, vel laoreet nulla luctus a. Duis lacinia ornare erat tempus fringilla. Donec mollis eget odio ac iaculis. Morbi arcu eros, pulvinar fermentum nulla ut, tincidunt consequat sapien. Nulla lobortis bibendum odio semper efficitur. Ut sed vulputate velit, eu venenatis lectus. Mauris ut purus nec lectus faucibus tincidunt in quis nulla. In massa nisl, ultricies id elit nec, iaculis consequat leo. Quisque rutrum sagittis sem, non malesuada ante suscipit vel. Curabitur vitae laoreet lacus.
-        </p>
-    </div>
-    <div style="width: 75%">
-        <h2>FAQ</h2>
-        <div class="faqItem">
-            <h3 >Is "Lush Lotto" free? <i class="material-icons">keyboard_arrow_down</i><i class="material-icons" style="display: none">keyboard_arrow_up</i></h3>
-            <div class="answer" style="display: none">No, this page is completely free, because is just a simulation.
-                <br>You don't pay anything, but also your won prize isn't real</div>
+    <style>
+        .material-icons
+        {
+            font-size: 36px;
+        }
+    </style>
+    <div class="mainFAQ">
+        <h2> About Lush Lotto</h2>
+        <div style="width: 50%">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in magna volutpat, porttitor diam pretium, bibendum neque. Vivamus volutpat turpis id rutrum elementum. Vestibulum mollis justo a metus consequat finibus. Proin nec faucibus nisi, quis feugiat tortor. Sed cursus euismod felis, vel laoreet nulla luctus a. Duis lacinia ornare erat tempus fringilla. Donec mollis eget odio ac iaculis. Morbi arcu eros, pulvinar fermentum nulla ut, tincidunt consequat sapien. Nulla lobortis bibendum odio semper efficitur. Ut sed vulputate velit, eu venenatis lectus. Mauris ut purus nec lectus faucibus tincidunt in quis nulla. In massa nisl, ultricies id elit nec, iaculis consequat leo. Quisque rutrum sagittis sem, non malesuada ante suscipit vel. Curabitur vitae laoreet lacus.
+            </p>
+        </div>
+        <div class="main">
+            <span class="close" onclick="hideMain()">&times;</span>
+            <h2>Donation</h2>
+            <p>
+                If you like this page or my other projects you can support me with donation.
+            </p>
+        </div>
+        <div style="width: 75%">
+            <h2>FAQ</h2>
+            <div class="faqItem">
+                <h3 >Is "Lush Lotto" free?
+                    <i class="material-icons q1" title="q1" onclick="showAnswer(this.title)">keyboard_arrow_down</i>
+                    <i class="material-icons q1" title="q1" style="display: none" onclick="hideAnswer(this.title)">keyboard_arrow_up</i>
+                </h3>
+                <div class="answer q1" style="display: none">Yes, this page is completely free, because is just a simulation.
+                    <br>You don't have to pay anything, but also your won prize isn't real money.</div>
+            </div>
+            <div class="faqItem">
+                <h3 >What is LC?
+                    <i class="material-icons q2" title="q2" onclick="showAnswer(this.title)">keyboard_arrow_down</i>
+                    <i class="material-icons q2" title="q2" style="display: none" onclick="hideAnswer(this.title)">keyboard_arrow_up</i>
+                </h3>
+                <div class="answer q2" style="display: none">
+                    LC is a shortcut for Lush Currency, which is payment for games on Lush Lotto.
+                    <br>To get more LC, win one of Lush Games or guess correct numbers in draw.</div>
+            </div>
+            <div class="faqItem">
+                <h3 >Is "Lush Lotto" free?
+                    <i class="material-icons q3" title="q3" onclick="showAnswer(this.title)">keyboard_arrow_down</i>
+                    <i class="material-icons q3" title="q3" style="display: none" onclick="hideAnswer(this.title)">keyboard_arrow_up</i>
+                </h3>
+                <div class="answer q3" style="display: none">No, this page is completely free, because is just a simulation.
+                    <br>You don't pay anything, but also your won prize isn't real</div>
+            </div>
         </div>
     </div>
-
+<script src="{{ asset('js/faq.js') }}"></script>
 {% endblock %}
